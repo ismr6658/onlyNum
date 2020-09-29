@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <div class="box">
-          <span>可输入1-10之间任意数字：</span>
-            <number v-model="num" :integer="false" :range="[1,10]" :decimals='2' />
-            <p>输出：{{num ? num :''}}</p>
+            <span>可输入1-10之间任意数字：</span>
+            <number v-model="num" :decimals="0" :range=[0,10] />
+            <p>输出：{{ num ? num + "&nbsp;&nbsp;类型：" + typeof num : "" }}</p>
         </div>
     </div>
 </template>
@@ -18,7 +18,7 @@ export default {
     },
     data() {
         return {
-            num: 1,
+            num: null,
         };
     },
 };

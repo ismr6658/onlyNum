@@ -6,10 +6,9 @@
 
 ## 参数
 
-##### 1、integer :
+##### 1、decimals :
 ```
-true: 默认值，设置为整数
-false：设置为负数
+保留小数位，值为非负整数，不传则只可输入整数
 ```
 ##### 2、range :
 ```
@@ -17,7 +16,7 @@ false：设置为负数
 ```
 ##### 事例
 ```
-<only-num v-model="num" :integer="false" :range="[1,10]"></only-num>
+<only-num v-model="num" :decimals="2" :range="[1,10]"></only-num>
 <script>
     export default {
         components: {
