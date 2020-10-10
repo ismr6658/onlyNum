@@ -1,50 +1,72 @@
-# 数字输入框
+# 数字输入框-ElNumber
 
-### 解决问题：
-+ 该组件实现PC端输入框只可输入数字相关内容。
-+ 支持整数、小数、以及限制输入数字范围等功能。
+基于ElementUI的数字输入框
+
+## 特性
+
+- 仅支持输入数字的输入框
+- 支持小数位数限制、输入区间限制
+
+## 示例
+
+```html
+<number
+    :value="test"
+    @input="test = $event"
+/>
+ ```
+
+ ```js
+export default {
+    data() {
+        return {
+            test: 1
+        };
+    },
+    ...
+}
+ ```
 
 ## 参数
 
-##### 1、decimals :
-```
-保留小数位，值为非负整数，不传则只可输入整数
-```
-##### 2、range :
-```
-[1,100]：设置可输入数字区间范围
-```
-##### 事例
-```
-<only-num v-model="num" :decimals="2" :range="[1,10]"></only-num>
-<script>
-    export default {
-        components: {
-            onlyNum,
-        },
-        data() {
-            return {
-                num: 1,
-            };
-        },
-    };
-</script>
- ```
+### value[String, Number]
 
-##### Project setup
-```
-npm install
-```
+初始值，默认''
 
-##### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### decimals[Number]
 
-##### Compiles and minifies for production
-```
-npm run build
-```
+保留小数位数，值为非负整数，默认0，即只能输入整数
 
+### range[Array]
 
+长度为2的数组，设置输入数字的区间限制
 
+### round[Boolean]
+
+保留小数位是否需要四舍五入，默认false
+
+### zeroFill[Boolean]
+
+输入不足小数位是否需要补零，默认false
+
+### placeholder[String]
+
+输入框占位符，同ElInput控件，默认“请输入”
+
+### disabled[Boolean]
+
+禁用，同ElInput控件，默认false
+
+### size[String]
+
+尺寸，同ElInput控件，默认''
+
+### readonly[Boolean]
+
+只读，同ElInput控件，默认false
+
+## 事件
+
+### input
+
+输入回调，参数 value[String]
