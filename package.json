@@ -1,7 +1,7 @@
 {
-  "name": "only-num",
-  "version": "1.0.0",
-  "private": false,
+  "name": "el-number",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -18,20 +18,5 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "description": "基于ElementUI的数字输入框",
-  "main": "dist/onlynum.min.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ismr6658/onlyNum.git"
-  },
-  "keywords": [
-    "number"
-  ],
-  "author": "ismr6658",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ismr6658/onlyNum/issues"
-  },
-  "homepage": "https://github.com/ismr6658/onlyNum#readme"
+  ]
 }
