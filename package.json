@@ -1,7 +1,8 @@
 {
-  "name": "onlynum",
+  "name": "el-onlunum",
   "version": "1.0.0",
   "private": false,
+  "author": "ismr6658",
   "main": "lib/onlynum.umd.min.js",
   "keyword": "number onlynum only only-number",
   "scripts": {
@@ -16,6 +17,10 @@
   "devDependencies": {
     "@vue/cli-service": "^4.5.7",
     "vue-template-compiler": "^2.6.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismr6658/onlyNum.git"
   },
   "browserslist": [
     "> 1%",
