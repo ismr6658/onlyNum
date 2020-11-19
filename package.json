@@ -1,10 +1,13 @@
 {
-  "name": "el-number",
-  "version": "0.1.0",
-  "private": true,
+  "name": "onlynum",
+  "version": "1.0.0",
+  "private": false,
+  "main": "lib/onlynum.umd.min.js",
+  "keyword": "number onlynum only only-number",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name onlynum --dest lib packages/index.js"
   },
   "dependencies": {
     "element-ui": "^2.13.2",
