@@ -8,6 +8,7 @@
     @input="handleInput"
     @change="handleChange($event, true)"
   ></el-input>
+
 </template>
 
 <script>
@@ -181,4 +182,28 @@ export default {
 </script>
 
 <style scoped>
+ .el-input__inner:focus {
+    border-color: #409EFF;
+    outline: 0;
+}
+.el-input__inner:hover {
+    border-color: #C0C4CC;
+}
+.el-input__inner {
+    -webkit-appearance: none;
+    background-color: #FFF;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
 </style>
