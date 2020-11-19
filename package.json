@@ -1,6 +1,6 @@
 {
-  "name": "el-onlunum",
-  "version": "1.0.0",
+  "name": "el-onlynum",
+  "version": "1.0.1",
   "private": false,
   "author": "ismr6658",
   "main": "lib/onlynum.umd.min.js",
