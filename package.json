@@ -1,7 +1,6 @@
 {
-  "name": "el-onlynum",
+  "name": "vue-onlynum",
   "version": "1.0.1",
-  "private": false,
   "author": "ismr6658",
   "main": "lib/onlynum.umd.min.js",
   "keyword": "number onlynum only only-number",
@@ -26,5 +25,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "基于ElementUI的数字输入框",
+  "bugs": {
+    "url": "https://github.com/ismr6658/onlyNum/issues"
+  },
+  "homepage": "https://github.com/ismr6658/onlyNum#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "keywords": [
+    "number",
+    "onlynum",
+    "only",
+    "only-number"
+  ],
+  "license": "ISC"
 }
