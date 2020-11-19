@@ -1,7 +1,7 @@
 {
   "name": "only-num",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -20,7 +20,6 @@
     "not dead"
   ],
   "description": "基于ElementUI的数字输入框",
-  "private": false,
   "main": "dist/onlynum.min.js",
   "repository": {
     "type": "git",
